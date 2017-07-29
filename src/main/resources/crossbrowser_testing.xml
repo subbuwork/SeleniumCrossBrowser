@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="CrossBrowser_Chrome">
+        <parameter name="browser" value="gc"></parameter>
+        <classes>
+            <class name="selenium.CrossBrowserTesting">
+                <methods><include name="test_cross_browser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="CrossBrowser_IE" enabled="false">
+        <parameter name="browser" value="ie"></parameter>
+        <classes>
+            <class name="selenium.CrossBrowserTesting">
+                <methods><include name="test_cross_browser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="CrossBrowser_FireFox">
+        <parameter name="browser" value="ff"></parameter>
+        <classes>
+            <class name="selenium.CrossBrowserTesting">
+                <methods><include name="test_cross_browser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+
+
+</suite>
